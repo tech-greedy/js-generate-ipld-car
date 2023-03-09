@@ -1,0 +1,33 @@
+{
+  "name": "@techgreedy/generate-ipld-car",
+  "version": "4.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "go-npm install",
+    "preuninstall": "go-npm uninstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tech-greedy/js-generate-ipld-car.git"
+  },
+  "author": "",
+  "license": "(Apache-2.0 AND MIT)",
+  "bugs": {
+    "url": "https://github.com/tech-greedy/js-generate-ipld-car/issues"
+  },
+  "homepage": "https://github.com/tech-greedy/js-generate-ipld-car#readme",
+  "devDependencies": {
+    "@gzuidhof/go-npm": "^0.1.13"
+  },
+  "goBinary": {
+    "name": "generate-ipld-car",
+    "path": "./bin",
+    "url": "https://github.com/tech-greedy/generate-car/releases/download/v{{version}}/generate-car_{{version}}_{{platform}}_{{arch}}.tar.gz"
+  },
+  "files": [
+    "LICENSE",
+    "package.json"
+  ]
+}
